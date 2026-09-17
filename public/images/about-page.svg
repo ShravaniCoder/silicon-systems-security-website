@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900">
+<defs>
+ <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#0f2f25"/><stop offset="1" stop-color="#184636"/></linearGradient>
+ <linearGradient id="glass" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#ffffff" stop-opacity=".20"/><stop offset="1" stop-color="#ffffff" stop-opacity=".04"/></linearGradient>
+ <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#ead9b2"/><stop offset="1" stop-color="#c9aa6c"/></linearGradient>
+ <filter id="shadow"><feDropShadow dx="0" dy="22" stdDeviation="24" flood-color="#06140f" flood-opacity=".35"/></filter>
+ <pattern id="grid" width="42" height="42" patternUnits="userSpaceOnUse"><path d="M42 0H0V42" fill="none" stroke="#fff" stroke-opacity=".045"/></pattern>
+</defs>
+<rect width="1600" height="900" fill="url(#bg)"/><rect width="1600" height="900" fill="url(#grid)"/>
+<circle cx="1370" cy="100" r="280" fill="#49a956" opacity=".09"/><circle cx="1460" cy="760" r="360" fill="#c9aa6c" opacity=".06"/>
+<g font-family="Arial, Helvetica, sans-serif"><text x="80" y="95" fill="#c9aa6c" font-size="20" font-weight="700" letter-spacing="6">SILICON SYSTEMS &amp; SECURITIES</text><text x="80" y="145" fill="#fff" font-size="46" font-weight="700">About the team</text><text x="80" y="185" fill="#b8c8c0" font-size="20">A considered approach to business technology, security and support.</text></g><g filter="url(#shadow)"><rect x="760" y="235" width="650" height="440" rx="28" fill="url(#glass)" stroke="#fff" stroke-opacity=".16"/>
+        <rect x="805" y="280" width="330" height="235" rx="16" fill="#0b2119" stroke="#8fb09e" stroke-opacity=".25"/>
+        <rect x="830" y="305" width="280" height="155" rx="9" fill="#dfe9e2"/><rect x="850" y="325" width="90" height="80" rx="8" fill="#1f6844"/><path d="M965 345h105M965 370h78M965 395h105" stroke="#8ca296" stroke-width="10" stroke-linecap="round"/>
+        <rect x="850" y="475" width="240" height="12" rx="6" fill="#6e8f7d"/><rect x="885" y="515" width="170" height="12" rx="6" fill="#6e8f7d"/>
+        <rect x="1185" y="300" width="160" height="270" rx="18" fill="#f3f1e9"/><circle cx="1265" cy="355" r="36" fill="#49a956" opacity=".9"/><path d="M1218 445h94M1218 475h70M1218 505h84" stroke="#567164" stroke-width="11" stroke-linecap="round"/>
+        <rect x="820" y="575" width="500" height="22" rx="11" fill="#071a13"/><rect x="1010" y="600" width="120" height="28" rx="8" fill="#071a13"/></g>
+        <g fill="#c9aa6c"><circle cx="700" cy="270" r="5"/><circle cx="720" cy="270" r="5"/><circle cx="740" cy="270" r="5"/></g><path d="M80 820H1520" stroke="#fff" stroke-opacity=".12"/><circle cx="1500" cy="820" r="6" fill="#c9aa6c"/><circle cx="1478" cy="820" r="6" fill="#49a956"/></svg>
