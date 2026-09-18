@@ -10,8 +10,8 @@
   font-family:"DM Sans",sans-serif; color:var(--ink); background:var(--paper);
 }
 *{box-sizing:border-box}
-html{scroll-behavior:smooth;overflow-x:hidden;-webkit-text-size-adjust:100%}
-body{margin:0;min-width:320px;background:var(--paper);color:var(--ink);overflow-x:hidden}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;min-width:320px;background:var(--paper);color:var(--ink);overflow-x:clip}
 a{text-decoration:none;color:inherit}
 button,input,textarea{font:inherit}
 img{max-width:100%}
@@ -28,7 +28,16 @@ img{max-width:100%}
 .section-lead,.section-title>p:last-child{color:var(--muted);font-size:16px;line-height:1.8;margin:18px auto 0;max-width:660px}
 
 /* Header */
-.site-header{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid var(--line);backdrop-filter:blur(18px)}
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: #ffffff; /* important — sticky headers need a background or content will show through */
+}
+
+.site-header.scrolled {
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+}
 .nav-shell{height:82px;width:min(1240px,calc(100% - 40px));margin:auto;display:flex;align-items:center;justify-content:space-between;gap:25px}
 .brand-logo{height:56px;width:auto;max-width:205px;object-fit:contain;display:block}
 .desktop-nav{display:flex;align-items:center;gap:31px;margin-left:auto}
