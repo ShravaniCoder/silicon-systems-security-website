@@ -33,7 +33,7 @@ export const services = [
   },
   {
     icon: Network,
-    title: "Domain & Web Hosting",
+    title: "Domain, Web Hosting & Business Email",
     slug: "domain-hosting",
     description:
       "A dependable digital foundation for domains, hosting and business email, with practical migration and setup support.",

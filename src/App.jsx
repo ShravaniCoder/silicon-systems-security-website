@@ -9,6 +9,7 @@ import ServiceDetail from "./pages/ServiceDetail";
 import Solutions from "./pages/Solutions";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
+import SEO from "./components/SEO";
 
 function usePath() {
  const [path,setPath]=useState(window.location.pathname.replace(/\/+$/,"") || "/");
@@ -28,15 +29,32 @@ function usePath() {
  return path;
 }
 
-export default function App(){
- const path=usePath();
- let page=<NotFound/>;
- if(path==="/") page=<Home/>;
- else if(path==="/about") page=<About/>;
- else if(path==="/services") page=<Services/>;
- else if(path==="/solutions") page=<Solutions/>;
- else if(path==="/contact") page=<Contact/>;
- else if(path.startsWith("/services/")) page=<ServiceDetail slug={path.split("/").pop()}/>;
- useEffect(()=>{ const titles={"/":"Silicon Systems & Securities | IT & Security Solutions","/about":"About Us | Silicon Systems & Securities","/services":"IT & Security Services | Silicon Systems & Securities","/solutions":"Business Technology Solutions | Silicon Systems & Securities","/contact":"Contact Us | Silicon Systems & Securities"}; document.title=titles[path]||"Silicon Systems & Securities"; },[path]);
- return <><ScrollToTop path={path}/><Layout>{page}</Layout></>;
+export default function App() {
+  const path = usePath();
+
+  let page = <NotFound />;
+
+  if (path === "/") {
+    page = <Home />;
+  } else if (path === "/about") {
+    page = <About />;
+  } else if (path === "/services") {
+    page = <Services />;
+  } else if (path === "/solutions") {
+    page = <Solutions />;
+  } else if (path === "/contact") {
+    page = <Contact />;
+  } else if (path.startsWith("/services/")) {
+    page = <ServiceDetail slug={path.split("/").pop()} />;
+  }
+
+  return (
+    <>
+      <SEO path={path} />
+
+      <ScrollToTop path={path} />
+
+      <Layout>{page}</Layout>
+    </>
+  );
 }
