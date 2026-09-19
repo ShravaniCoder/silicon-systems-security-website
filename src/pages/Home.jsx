@@ -23,7 +23,7 @@ export default function Home() {
          {/* SEO-friendly eyebrow */}
          <p className="eyebrow light">
            <span />
-           IT, Security & ELV Solutions in Mulund, Mumbai
+           IT & Security Solutions Provider in India
          </p>
 
          {/* Main H1 */}
@@ -37,12 +37,10 @@ export default function Home() {
          <p className="hero-copy">
            Complete IT, website development, domain registration, web hosting,
            business email and IT support solutions, built to keep modern
-           businesses connected, secure and supported.
-           
-           From CCTV surveillance, fire alarm systems, biometric & access
-           control, structured cabling, voice evacuation and IT maintenance to
-           integrated ELV projects, we deliver dependable technology and
-           security solutions.
+           businesses connected, secure and supported. From CCTV surveillance,
+           fire alarm systems, biometric & access control, structured cabling,
+           voice evacuation and IT maintenance to integrated ELV projects, we
+           deliver dependable technology and security solutions.
          </p>
 
          {/* CTA buttons */}
