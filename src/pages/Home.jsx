@@ -35,7 +35,7 @@ export default function Home() {
 
          {/* SEO-friendly introduction */}
          <p className="hero-copy">
-           Complete IT, website development, domain registration, web hosting,
+           Complete IT, domain registration, website development, web hosting,
            business email and IT support solutions, built to keep modern
            businesses connected, secure and supported. From CCTV surveillance,
            fire alarm systems, biometric & access control, structured cabling,
